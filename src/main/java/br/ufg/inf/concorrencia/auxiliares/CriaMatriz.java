@@ -1,7 +1,6 @@
-package java.br.ufg.inf.concorrencia.multiplicacaodematrizes.auxiliares;
+package br.ufg.inf.concorrencia.auxiliares;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Cria as matrizes a serem multiplicadas.
@@ -30,6 +29,10 @@ public class CriaMatriz {
         tamanhoMaximoElemento = arqConfiguracao.getTamanhoMaximoElemento();
     }
 
+    /**
+     * Cria uma matriz A populada, pelas dimensões dos parametros.
+     * @return matriz A.
+     */
     public double[][] criaMatrizA() {
 
         int numeroLinhasMatrizA = arqConfiguracao.getLinhaMatrizA();
@@ -39,13 +42,18 @@ public class CriaMatriz {
 
         for (int i = 0; i < numeroLinhasMatrizA; i++) {
             for (int j = 0; j < numeroColunasMatrizA; j++) {
-                matriz[i][j] = Math.random() * tamanhoMaximoElemento;
+                matriz[i][j] = (Math.random() * tamanhoMaximoElemento);
             }
         }
 
         return matriz;
     }
 
+    /**
+     * Cria uma matriz B populada, pelas dimensões dos parametros.
+     * @return matriz B.
+     * @return
+     */
     public double[][] criaMatrizB() {
 
         int numeroLinhasMatrizB = arqConfiguracao.getLinhaMatrizB();

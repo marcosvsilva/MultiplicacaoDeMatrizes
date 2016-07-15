@@ -1,4 +1,4 @@
-package java.br.ufg.inf.concorrencia.multiplicacaodematrizes.auxiliares;
+package br.ufg.inf.concorrencia.auxiliares;
 
 /**
  * Contêm os conteúdos fixos da aplicação.
@@ -41,6 +41,29 @@ public class Strings {
             "TamanhoMaximoElementosMatriz";
 
     /**
+     * Tag de impressão da matriz A.
+     */
+    public static final String tagImprimiMatrizA =
+            "ImprimirMatrizA";
+
+    /**
+     * Tag de impressão da matriz B.
+     */
+    public static final String tagImprimiMatrizB =
+            "ImprimirMatrizB";
+
+    /**
+     * Tag de impressão da matriz produto de A e B.
+     */
+    public static final String tagImprimiMatrizProduto =
+            "ImprimirMatrizProduto";
+
+    /**
+     * Tamanho da lista que contêm linhas e colunas.
+     */
+    public static final int tamanhoLista = 4;
+
+    /**
      * Posicao linha matriz A dentro da Lista que contêm linhas e colunas.
      */
     public static final int posicaoLinhaA = 0;
@@ -59,4 +82,19 @@ public class Strings {
      * Posicao coluna matriz B dentro da Lista que contêm linhas e colunas.
      */
     public static final int posicaoColunaB = 3;
+
+    /**
+     * Mascara para impressão de números decimais.
+     */
+    public static final String mascaraDecimais = "###,##0.00";
+
+    /**
+     * Parametro String relacionado ao booleando True;
+     */
+    public static final String stringTrue = "Sim";
+
+    /**
+     * Parametro String relacionado ao booleando False;
+     */
+    public static final String stringFalse = "Nao";
 }

@@ -12,7 +12,7 @@ public class Strings {
      * das matrizes a serem multiplicadas.
      */
     public static final String enderecoArquivoConfiguracao =
-            "./Configuracao/config.properties";
+            "./configuracao/config.properties";
 
     /**
      * Tag da quantidade de linhas da matriz A dentro da lista.
